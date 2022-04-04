@@ -1,0 +1,22 @@
+<Context>
+
+<!-- <Resource name="jdbc/adminDB" auth="Container" type="javax.sql.DataSource" -->
+<!--             maxActive="20" maxIdle="10" username="APP" password="" -->
+<!--             driverClassName="org.apache.derby.jdbc.EmbeddedDriver" -->
+<!--              url="jdbc:derby:C:\tools\derbydb"/>  -->
+
+	<Resource name="jdbc/adminDB" auth="Container" type="javax.sql.DataSource"
+             maxActive="20" maxIdle="10" username="APP" password="felipe2K12"
+             driverClassName="org.apache.derby.jdbc.ClientDriver"
+             url="jdbc:derby://localhost:1527/C:\tools\derbydb"/>
+             
+<!--	<Resource name="jdbc/adminDB" auth="Container" type="javax.sql.DataSource" 
+             maxActive="20" maxIdle="10" username="APP" password="felipe2K12" 
+             driverClassName="org.apache.derby.jdbc.ClientDriver" 
+             url="jdbc:derby://oceano:13527//oceano/services/TDS5/apache-tomcat-7.0.34/content/tap/derbydb"/>-->
+             
+             
+<!-- 	<ResourceLink global="jdbc/adminDB" name="jdbc/adminDB" type="javax.sql.DataSource"/>  -->
+</Context>
+
+
