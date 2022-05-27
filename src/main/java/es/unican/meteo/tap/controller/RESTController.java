@@ -149,5 +149,11 @@ public class RESTController {
 		return new ResponseMessage("Valid credentials","SUCCESS");
 
 	 }
-		
+
+	// Secure version of the above method, that was showing passwords in the url...
+	@RequestMapping(method=RequestMethod.POST, value="/v1/signin/verify/secure")
+	public @ResponseBody ResponseMessage verifyCredentialsSecure(HttpServletRequest request, HttpServletResponse response, Model model, @RequestParam String username, @RequestParam String password) throws Exception {
+		return verifyCredentials(request, response, model, username, password);
+	}
+
 }
