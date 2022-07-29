@@ -80,6 +80,7 @@
                 <!-- Use TLS to encrypt communication with SMTP server -->
                 <prop key="mail.smtp.starttls.enable">true</prop>
                 <prop key="mail.debug">true</prop>
+		<prop key="mail.smtp.ssl.trust">correo.unican.es</prop>
             </props>
         </property>
     </bean>
